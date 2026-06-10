@@ -40,8 +40,8 @@ public class LoginTest {
     public void testSuccessfulLogin1() {
 
         loginPage.enterCredentials(
-                "nguyenthiyenngoc",
-                "1234567"
+                "standard_user",
+                "secret_sauce"
         );
 
         loginPage.clickLogin();
@@ -55,8 +55,8 @@ public class LoginTest {
     public void testSuccessfulLogin2() {
 
         loginPage.enterCredentials(
-                "nguyenthiyenngoc",
-                "1234567"
+                "standard_user",
+                "secret_sauce"
         );
 
         loginPage.clickLogin();
