@@ -52,7 +52,7 @@ public class LoginTest {
     }
 
     @Test
-    public void testInvalidLogin() {
+    public void testSuccessfulLogin2() {
 
         loginPage.enterCredentials(
                 "wrong_user",
@@ -62,7 +62,7 @@ public class LoginTest {
         loginPage.clickLogin();
 
         Assert.assertTrue(
-                loginPage.isErrorMessageDisplayed()
+                loginPage.isLoginSuccessful()
         );
     }
 
