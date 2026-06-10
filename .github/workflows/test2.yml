@@ -1,4 +1,4 @@
-name: Login Fail Test
+name: Login Test
 
 on:
   push:
