@@ -1,0 +1,29 @@
+name: Login Success Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  test-success:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Give execute permission to mvnw
+        run: chmod +x mvnw
+
+      - name: Run Success Test
+        run: ./mvnw test -Dtest=LoginTest#testSuccessfulLogin1
