@@ -55,8 +55,8 @@ public class LoginTest {
     public void testInvalidLogin() {
 
         loginPage.enterCredentials(
-                "wrong_user",
-                "wrong_password"
+                "standard_user",
+                "secret_sauce"
         );
 
         loginPage.clickLogin();
